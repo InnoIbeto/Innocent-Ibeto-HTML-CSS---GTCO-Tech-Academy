@@ -179,3 +179,52 @@ body {
     border-top-right-radius: 6px;
     box-shadow: 0 15px 35px black; 
 }
+
+/* --- Section 3: Showcase --- */
+
+.showcase-section {
+    background-color: #0b1116; 
+    padding: 110px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-container {
+    max-width: 1140px;
+    width: 100%;
+    text-align: center;
+}
+
+.showcase-intro-text {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.45); 
+    max-width: 880px;
+    margin: 0 auto 40px auto;
+    letter-spacing: 0.3px;
+}
+
+.highlight-text {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.showcase-divider {
+    width: 60px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 auto 80px auto;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.showcase-item {
+    text-align: center;
+}
+

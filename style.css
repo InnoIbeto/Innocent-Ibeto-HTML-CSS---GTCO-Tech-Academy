@@ -1,4 +1,61 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #2c3e50;
+    background-color: #ffffff;
+}
+
+
+.navbar-wrapper {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f2f5;
+    padding: 15px 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style-type: none; /* helped in removing bullet points in ul*/
+}
+
+.nav-item {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5e6e80;
+    text-decoration: none; 
+    transition: color 0.2s ease;
+}
+
+.nav-item:hover{
+    color: #2a3b50;
+}
+
+.nav-item.active {
+    color: #2a3b50;
 }

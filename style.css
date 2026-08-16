@@ -7,10 +7,16 @@ body {
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #2c3e50;
     background-color: #ffffff;
+    padding-top: 55px; 
 }
 
-
+/* --- Section 1: Navigation (Fixed to Top) --- */
 .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps the navbar on top of other content */
     background-color: #ffffff;
     border-bottom: 1px solid #f0f2f5;
     padding: 15px 30px;
@@ -58,4 +64,118 @@ body {
 
 .nav-item.active {
     color: #2a3b50;
+}
+
+
+/* --- Section 2: Hero --- */
+.hero-section {
+    padding: 80px 20px 0 20px; /* Padding-bottom 0 allows the image to sit cleanly on the edge */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1848px; /* Expanded to accommodate the wide panoramic image */
+    width: 100%;
+    text-align: center;
+}
+
+.hero-badge {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.hero-title {
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #1e293b;
+    margin: 0 auto 20px auto;
+    max-width: 700px; /* Constrains text width for clean readability */
+}
+
+.accent-text {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    color: blue;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #5e6e80;
+    margin: 0 auto 35px auto;
+    max-width: 700px; /* Constrains text width for clean readability */
+}
+
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px; /* Reduced from 60px to move image closer */
+}
+
+.btn-gallery {
+    display: inline-block;
+    background-color: blue;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-gallery:hover {
+    background-color: #334155;
+}
+
+.hero-subtext-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.actions-divider {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.btn-Purchase {
+    display: inline-block;
+    color: blue;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+.btn-Purchase:hover {
+    border-bottom-color: #1e293b;
+}
+
+.hero-showcase {
+    max-width: 100%;
+    margin-top: 0; 
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1000px; 
+    height: 291.67px; 
+    object-fit: cover; 
+    object-position: center; 
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 0 15px 35px black; 
 }

@@ -228,3 +228,174 @@ body {
     text-align: center;
 }
 
+.card-media {
+    margin-top: 15px;
+    border-radius: 6px;
+    overflow: hidden; /* Clips the image corners inside the rounded border */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Stronger dark shadow appropriate for black backgrounds */
+    transition: transform 0.2s ease;
+}
+
+.showcase-item:hover .card-media {
+    transform: translateY(-8px); /* Card smoothly lifts on hover */
+}
+
+.card-img {
+    width: 100%;
+    height: 380px; /* Set height for consistent alignment */
+    object-fit: cover; /* Crops the source photo gracefully to fill the box */
+    object-position: top; /* Keeps focus on the top header fold of the screenshot template */
+    display: block;
+}
+
+/* --- Section 4: side by side text section --- */
+.grid-features-section {
+    background-color: #ffffff;
+    padding: 120px 20px; 
+    display: flex;
+    justify-content: center;
+}
+
+.grid-features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 60px 80px; 
+    max-width: 1140px;
+    width: 100%;
+}
+
+.grid-feature-item {
+    border-top: 1.5px solid #ff4a5a; 
+    padding-top: 30px; 
+}
+
+.grid-feature-title {
+    font-size: 32px;
+    font-weight: 300; 
+    line-height: 1.35;
+    color: #212529; 
+    letter-spacing: -0.5px;
+}
+
+/* Section 5: CTA section */
+
+.cta-section {
+    background-color: #ffffff;
+    padding: 60px 20px 120px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-container {
+    max-width: 1140px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Thin horizontal line matching screenshot */
+.cta-divider {
+    width: 80px;
+    height: 1.5px;
+    background-color: #e2e8f0; /* Very light gray line */
+    margin: 0 auto 50px auto;
+}
+
+.cta-title {
+    font-size: 32px;
+    font-weight: 300; /* Matching the light, clean font style */
+    color: #212529; /* Deep dark-gray text */
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+}
+
+/* Blue Outline Button */
+.btn-cta-purchase {
+    display: inline-block;
+    color: #007bff; /* Bright blue text */
+    border: 1.5px solid #007bff; /* Bright blue border */
+    background-color: transparent;
+    padding: 14px 40px; /* Comfortable spacing */
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Elegant transition filling the button background on hover */
+.btn-cta-purchase:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* --- Section 6: Footer --- */
+.footer-section {
+    background-color: #0b1116; /* Deep dark slate to match Section 3 background */
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side text */
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.5); /* Muted off-white text */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Center socials */
+.footer-socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-link img {
+    height: 16px; /* Clean, minimal icon dimensions matching screenshot */
+    width: auto;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.social-link img:hover {
+    opacity: 1; /* Brightens on hover */
+}
+
+/* Right side credit text */
+.footer-credit {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.heart-emoji {
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.credit-link {
+    color: #007bff; /* Bright accent blue matching your button links */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.credit-link:hover {
+    color: #3b82f6; /* Soft shift on hover */
+}

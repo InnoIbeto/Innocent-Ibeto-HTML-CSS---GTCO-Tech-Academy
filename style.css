@@ -16,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Keeps the navbar on top of other content */
+    z-index: 1000; 
     background-color: #ffffff;
     border-bottom: 1px solid #f0f2f5;
     padding: 15px 30px;
@@ -47,7 +47,7 @@ body {
 }
 
 .nav-links li {
-    list-style-type: none; /* helped in removing bullet points in ul*/
+    list-style-type: none; 
 }
 
 .nav-item {
@@ -56,6 +56,9 @@ body {
     color: #5e6e80;
     text-decoration: none; 
     transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .nav-item:hover{
@@ -69,14 +72,14 @@ body {
 
 /* --- Section 2: Hero --- */
 .hero-section {
-    padding: 80px 20px 0 20px; /* Padding-bottom 0 allows the image to sit cleanly on the edge */
+    padding: 80px 20px 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .hero-container {
-    max-width: 1848px; /* Expanded to accommodate the wide panoramic image */
+    max-width: 1848px; 
     width: 100%;
     text-align: center;
 }
@@ -97,7 +100,7 @@ body {
     line-height: 1.2;
     color: #1e293b;
     margin: 0 auto 20px auto;
-    max-width: 700px; /* Constrains text width for clean readability */
+    max-width: 700px; 
 }
 
 .accent-text {
@@ -111,7 +114,7 @@ body {
     font-size: 20px;
     color: #5e6e80;
     margin: 0 auto 35px auto;
-    max-width: 700px; /* Constrains text width for clean readability */
+    max-width: 700px; 
 }
 
 .hero-actions {
@@ -119,7 +122,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-bottom: 30px; /* Reduced from 60px to move image closer */
+    margin-bottom: 30px; 
 }
 
 .btn-gallery {
@@ -160,11 +163,6 @@ body {
 
 .btn-Purchase:hover {
     border-bottom-color: #1e293b;
-}
-
-.hero-showcase {
-    max-width: 100%;
-    margin-top: 0; 
 }
 
 .hero-image {
@@ -231,20 +229,20 @@ body {
 .card-media {
     margin-top: 15px;
     border-radius: 6px;
-    overflow: hidden; /* Clips the image corners inside the rounded border */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Stronger dark shadow appropriate for black backgrounds */
+    overflow: hidden; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
     transition: transform 0.2s ease;
 }
 
 .showcase-item:hover .card-media {
-    transform: translateY(-8px); /* Card smoothly lifts on hover */
+    transform: translateY(-8px); 
 }
 
 .card-img {
     width: 100%;
-    height: 380px; /* Set height for consistent alignment */
-    object-fit: cover; /* Crops the source photo gracefully to fill the box */
-    object-position: top; /* Keeps focus on the top header fold of the screenshot template */
+    height: 380px; 
+    object-fit: cover; 
+    object-position: top; 
     display: block;
 }
 
@@ -293,37 +291,32 @@ body {
     text-align: center;
 }
 
-/* Thin horizontal line matching screenshot */
 .cta-divider {
     width: 80px;
     height: 1.5px;
-    background-color: #e2e8f0; /* Very light gray line */
+    background-color: #e2e8f0; 
     margin: 0 auto 50px auto;
 }
 
 .cta-title {
     font-size: 32px;
-    font-weight: 300; /* Matching the light, clean font style */
-    color: #212529; /* Deep dark-gray text */
+    font-weight: 300; 
+    color: #212529; 
     margin-bottom: 40px;
     letter-spacing: -0.5px;
 }
 
-/* Blue Outline Button */
 .btn-cta-purchase {
     display: inline-block;
-    color: #007bff; /* Bright blue text */
-    border: 1.5px solid #007bff; /* Bright blue border */
-    background-color: transparent;
-    padding: 14px 40px; /* Comfortable spacing */
+    color: #007bff; 
+    border: 1.5px solid #007bff;
+    padding: 14px 40px; 
     border-radius: 4px;
     font-size: 15px;
-    font-weight: 600;
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Elegant transition filling the button background on hover */
 .btn-cta-purchase:hover {
     background-color: #007bff;
     color: #ffffff;
@@ -331,7 +324,7 @@ body {
 
 /* --- Section 6: Footer --- */
 .footer-section {
-    background-color: #0b1116; /* Deep dark slate to match Section 3 background */
+    background-color: #0b1116; 
     padding: 30px 20px;
     display: flex;
     justify-content: center;
@@ -348,7 +341,7 @@ body {
 
 /* Left side text */
 .footer-copyright {
-    color: rgba(255, 255, 255, 0.5); /* Muted off-white text */
+    color: rgba(255, 255, 255, 0.5); 
     font-size: 14px;
     font-weight: 500;
 }
@@ -360,33 +353,11 @@ body {
     align-items: center;
 }
 
-.social-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.social-link img {
-    height: 16px; /* Clean, minimal icon dimensions matching screenshot */
-    width: auto;
-    opacity: 0.5;
-    transition: opacity 0.2s ease;
-}
-
-.social-link img:hover {
-    opacity: 1; /* Brightens on hover */
-}
-
 /* Right side credit text */
 .footer-credit {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: 500;
-}
-
-.heart-emoji {
-    display: inline-block;
-    padding: 0 2px;
 }
 
 .credit-link {
